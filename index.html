@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseX — Smart Fitness Watch</title>
+  <meta name="description" content="PulseX Smart Fitness Watch — track your health, workouts, and sleep with style." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">Pulse<span>X</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#signup" class="btn btn-small">Get Updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Your Health. <span class="accent">On Your Wrist.</span></h1>
+        <p>PulseX tracks heart rate, sleep, workouts and stress 24/7 — with a 14-day battery and AMOLED brilliance.</p>
+        <div class="hero-cta">
+          <a href="#pricing" class="btn btn-primary">Buy Now — $199</a>
+          <a href="#features" class="btn btn-ghost">Learn More</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>14d</strong><span>Battery</span></li>
+          <li><strong>50m</strong><span>Waterproof</span></li>
+          <li><strong>120+</strong><span>Workouts</span></li>
+        </ul>
+      </div>
+      <div class="hero-image">
+        <div class="watch">
+          <div class="watch-face">
+            <div class="time">09:41</div>
+            <div class="bpm">❤ 72 BPM</div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Built for every move</h2>
+      <p class="section-sub">Premium sensors, smart insights, and an interface designed for daily life.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">❤</div>
+          <h3>24/7 Heart Tracking</h3>
+          <p>Continuous heart-rate monitoring with smart anomaly alerts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🏃</div>
+          <h3>120+ Workouts</h3>
+          <p>From running to surfing — auto-detect workouts and goals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🌙</div>
+          <h3>Sleep Insights</h3>
+          <p>Track REM, deep & light sleep with personalized tips.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔋</div>
+          <h3>14-Day Battery</h3>
+          <p>Two weeks of power on a single charge. Worry-free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Choose your PulseX</h2>
+      <p class="section-sub">Simple pricing. Free shipping. 30-day return.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>PulseX Lite</h3>
+          <div class="price"><span>$</span>149</div>
+          <ul>
+            <li>✓ Heart-rate tracking</li>
+            <li>✓ 7-day battery</li>
+            <li>✓ 50+ workouts</li>
+            <li>✓ Sleep tracking</li>
+          </ul>
+          <a href="#signup" class="btn btn-ghost">Get Lite</a>
+        </div>
+        <div class="price-card featured">
+          <div class="badge">Most Popular</div>
+          <h3>PulseX Pro</h3>
+          <div class="price"><span>$</span>199</div>
+          <ul>
+            <li>✓ Everything in Lite</li>
+            <li>✓ 14-day battery</li>
+            <li>✓ AMOLED display</li>
+            <li>✓ GPS + 50m waterproof</li>
+          </ul>
+          <a href="#signup" class="btn btn-primary">Get Pro</a>
+        </div>
+        <div class="price-card">
+          <h3>PulseX Ultra</h3>
+          <div class="price"><span>$</span>299</div>
+          <ul>
+            <li>✓ Everything in Pro</li>
+            <li>✓ Titanium body</li>
+            <li>✓ ECG + SpO2</li>
+            <li>✓ Cellular + LTE</li>
+          </ul>
+          <a href="#signup" class="btn btn-ghost">Get Ultra</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (interactive slider) -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Loved by thousands</h2>
+      <div class="slider">
+        <div class="slides" id="slides">
+          <div class="slide">
+            <p>"PulseX changed how I train. The sleep insights alone are worth it."</p>
+            <strong>— Aisha R., Marathon Runner</strong>
+          </div>
+          <div class="slide">
+            <p>"Beautiful design, incredible battery. I forget I'm wearing it."</p>
+            <strong>— David M., Designer</strong>
+          </div>
+          <div class="slide">
+            <p>"The heart-rate alerts caught an issue early. Genuinely life-changing."</p>
+            <strong>— Priya K., Teacher</strong>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button id="prevSlide" aria-label="Previous">‹</button>
+          <div class="dots" id="dots"></div>
+          <button id="nextSlide" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup -->
+  <section class="signup" id="signup">
+    <div class="container signup-box">
+      <h2>Be the first to know</h2>
+      <p>Join the list for launch updates and early-bird discounts.</p>
+      <form id="signupForm" novalidate>
+        <input type="email" id="emailInput" placeholder="you@example.com" required />
+        <button type="submit" class="btn btn-primary">Notify Me</button>
+        <small class="form-msg" id="formMsg"></small>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo">Pulse<span>X</span></a>
+        <p class="muted">Wear your wellness.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="container copy">© 2026 PulseX. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
